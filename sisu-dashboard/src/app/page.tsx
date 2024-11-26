@@ -11,12 +11,8 @@ export default function Home() {
    <div>
     <FileUpload/>
      <Sidebar/>
-   </div> 
-    <div className="">
     < UjuziWelcome/>
    
-  
-    
     </div>
   );
 }
