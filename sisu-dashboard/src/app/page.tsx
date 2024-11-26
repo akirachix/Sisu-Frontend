@@ -1,9 +1,15 @@
-import Sidebar from "./Sidebar";
+import UjuziWelcome from "./landingpage";
+
+
+
+
 export default function Home() {
   return (
-   <div>
-    <Sidebar/>
-   </div> 
+    <div className="">
+    < UjuziWelcome/>
+   
+  
     
+    </div>
   );
 }
