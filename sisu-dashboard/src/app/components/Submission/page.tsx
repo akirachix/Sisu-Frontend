@@ -2,10 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Home, ClipboardList, BarChart2 } from 'lucide-react';
+import Layout from '@/app/Layout';
+import Sidebar from '@/app/Sidebar/page';
 const Submission = () => {
   return (
+    <Layout>
     <div className="flex h-screen bg-gray-50">
-      <div className="w-64 bg-[#1A315C] text-white">
+<Sidebar/>
+      {/* <div className="w-64 bg-[#1A315C] text-white">
         <div className="p-6 flex justify-center">
           <Image
             src="/images/ujuzi-logo-white.png"
@@ -37,7 +41,7 @@ const Submission = () => {
             <span className="text-sm">Resources</span>
           </Link>
         </nav>
-      </div>
+      </div> */}
       <div className="flex-1 flex flex-col items-center pt-12">
         <h1 className="text-2xl text-gray-400 mb-2">Module One Assessment</h1>
         <p className="text-gray-400 mb-12">Time: 1hour</p>
@@ -70,8 +74,8 @@ const Submission = () => {
               </svg>
             </div>
           </div>
-         <Link href= "/components/AssessmentResults"> <button className="bg-[#FBBC05] text-white px-8 py-2 rounded-md hover:bg-[#E5AB04] transition-colors">
-            VIEW RESULTS
+         <Link href= "/AssessmentResults"> <button className="bg-[#FBBC05] text-white px-8 py-2 rounded-md hover:bg-[#E5AB04] transition-colors">
+            VIEW 
           </button>
           </Link>
         </div>
@@ -82,6 +86,7 @@ const Submission = () => {
         </div>
       </div>
     </div>
+    </Layout>
   );
 };
 export default Submission;

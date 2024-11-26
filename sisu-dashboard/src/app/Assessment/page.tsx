@@ -3,6 +3,8 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Home, Users, ClipboardList, Check } from 'lucide-react';
+import Sidebar from '../Sidebar/page';
+import Layout from '../Layout';
 const Assessment = () => {
   const modules = [
     { id: 1, name: 'Module 1', completed: true },
@@ -16,6 +18,7 @@ const Assessment = () => {
     { id: 'D', value: '34' },
   ];
   return (
+    <Layout>
     <div className="flex h-screen bg-gray-50">
      
       {/* Main Content */}
@@ -49,12 +52,12 @@ const Assessment = () => {
                   className={`p-3 rounded-md cursor-pointer transition-colors
                     ${option.id === 'A' ? 'bg-[#FFF3DC]' : 'bg-gray-100 hover:bg-gray-200'}`}
                 >
-                  <span className="font-medium">{option.id}) </span>
+                  <span className="font-medium">{option.id} </span>
                   {option.value}
                 </div>
               ))}
             </div>
-           <Link href="/components/Submission"> <button className="mt-8 bg-[#1A315C] text-white px-8 py-2 rounded-md hover:bg-[#234173]">
+           <Link href="/Submission"> <button className="mt-8 bg-[#1A315C] text-white px-8 py-2 rounded-md hover:bg-[#234173]">
               SUBMIT
             </button>
             </Link>
@@ -62,6 +65,7 @@ const Assessment = () => {
         </div>
       </div>
     </div>
+    </Layout>
   );
 };
 export default Assessment;
