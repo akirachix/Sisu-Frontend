@@ -1,3 +1,4 @@
+'use client';
 import Layout from "../Layout/layout";
 
 // components/MainContent.js
