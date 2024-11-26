@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Sidebar from "../(KicdOfficial)";
+import Sidebar from "../Componentsfeature/Sidebar/page";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
