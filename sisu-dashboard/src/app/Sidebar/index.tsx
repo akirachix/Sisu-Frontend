@@ -10,9 +10,15 @@ export default function Sidebar() {
 
   const navigationItems = [
     { name: 'Home', href: '/home', icon: Home },
-    { name: 'Teachers', href: '/teach', icon: Users },
-    { name: 'Assessment', href: '/assessment', icon: ClipboardList },
+    { name: 'Teachers', href: '/teachers', icon: Users },
+    { name: 'Assessment', href: '/Assessment', icon: ClipboardList },
     { name: 'Trainers', href: '/trainer', icon: UserCheck },
+    // { name: 'Assessment', href: '/Assessment', icon: UserCheck },
+    
+    // { name: 'Assessmentresults', href: '/AssessmentResults', icon: UserCheck },
+   
+
+
   ];
 
   return (
